@@ -104,7 +104,7 @@ if __name__ == "__main__":
     # parser.add_argument("--model-path", type=str, default="facebook/opt-350m")
     parser.add_argument("--model-path", type=str, default="liuhaotian/llava-v1.5-7b")
     parser.add_argument("--model-base", type=str, default=None)
-    parser.add_argument("--image-folder", type=str, default="data/coco/val2014")
+    parser.add_argument("--image-folder", type=str, default="experiments/data/coco/val2014")
     parser.add_argument("--question-file", type=str, default="experiments/data/POPE/coco/coco_pope_popular.json")
     parser.add_argument("--answers-file", type=str, default="results/answer.jsonl")
     parser.add_argument("--conv-mode", type=str, default="llava_v1")

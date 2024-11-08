@@ -7,7 +7,7 @@ import io
 dataset = load_dataset("lmms-lab/POPE")
 
 # Create a directory to save the images
-image_folder = "../data/coco/val2014"
+image_folder = "../experiments/data/coco/val2014"
 os.makedirs(image_folder, exist_ok=True)
 
 # Function to save an image

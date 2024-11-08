@@ -1,7 +1,8 @@
 seed=${1:-55}
 dataset_name=${2:-"coco"}
 type=${3:-"random"}
-model_path=${4:-"./checkpoints/llava-v1.5-7b"}
+# model_path=${4:-"./checkpoints/llava-v1.5-7b"}
+model_path=${4:-"liuhaotian/llava-v1.5-7b"}
 cd_alpha=${5:-1}
 cd_beta=${6:-0.2}
 noise_step=${7:-500}
