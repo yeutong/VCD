@@ -1,3 +1,7 @@
+import os
+os.chdir('/home/yeutong/CS263/project/VCD')
+os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+
 import argparse
 import torch
 import os
@@ -56,7 +60,7 @@ def eval_model(args):
 
         image = Image.open(os.path.join(args.image_folder, image_file))
         image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'][0]
-        
+        # image_tensor = torch.tensor(image_processor.preprocess(image)['pixel_values'][0])
         if args.use_cd:
             image_tensor_cd = add_diffusion_noise(image_tensor, args.noise_step)
         else:

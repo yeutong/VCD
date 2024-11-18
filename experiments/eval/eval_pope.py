@@ -4,8 +4,10 @@ import argparse
 from tqdm import tqdm
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--gt_files", type=str, default="data/POPE/coco_pope_popular.json")
-parser.add_argument("--gen_files", type=str, default="answer_files_POPE/llava15_coco_pope_popular_answers_no_cd.jsonl")
+# parser.add_argument("--gt_files", type=str, default="data/POPE/coco_pope_popular.json")
+parser.add_argument("--gt_files", type=str, default="experiments/data/POPE/coco/coco_pope_popular.json")
+# parser.add_argument("--gen_files", type=str, default="answer_files_POPE/llava15_coco_pope_popular_answers_no_cd.jsonl")
+parser.add_argument("--gen_files", type=str, default="results/answer.jsonl")
 args = parser.parse_args()
 
 # open ground truth answers
